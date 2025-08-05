@@ -1,0 +1,23 @@
+npts 40 42 60                        # num.grid points in xyz
+gridfld 3IUT_Ion.maps.fld # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C NA OA N SA HD     # receptor atom types
+ligand_types H A C NA OA N HD S SA F Cl Br # ligand atom types
+receptor 3IUT_Ion.pdbqt # macromolecule
+gridcenter 47.0 65.2 54.0            # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 3IUT_Ion.H.map # atom-specific affinity map
+map 3IUT_Ion.A.map # atom-specific affinity map
+map 3IUT_Ion.C.map # atom-specific affinity map
+map 3IUT_Ion.NA.map # atom-specific affinity map
+map 3IUT_Ion.OA.map # atom-specific affinity map
+map 3IUT_Ion.N.map # atom-specific affinity map
+map 3IUT_Ion.HD.map # atom-specific affinity map
+map 3IUT_Ion.S.map # atom-specific affinity map
+map 3IUT_Ion.SA.map # atom-specific affinity map
+map 3IUT_Ion.F.map # atom-specific affinity map
+map 3IUT_Ion.Cl.map # atom-specific affinity map
+map 3IUT_Ion.Br.map # atom-specific affinity map
+elecmap 3IUT_Ion.e.map # electrostatic potential map
+dsolvmap 3IUT_Ion.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
